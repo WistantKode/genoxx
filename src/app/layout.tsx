@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import clsx from "clsx";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const calSans = localFont({
+  src: "../../node_modules/cal-sans/fonts/webfonts/CalSans-SemiBold.woff2",
+  variable: "--font-cal",
+});
 
 export const metadata: Metadata = {
   title: "genoxx",
@@ -17,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
+      <body className={clsx(inter.variable, calSans.variable, "font-sans antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
     </html>

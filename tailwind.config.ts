@@ -14,6 +14,10 @@ const config: Config = {
       lg: "1200px",
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+        cal: ["var(--font-cal)", "sans-serif"],
+      },
       container: {
         center: true,
         padding: {
