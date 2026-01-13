@@ -6,8 +6,8 @@ import clsx from "clsx";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "genoxx",
+  description: "Just a high-conversion SaaS landing page template built with React/Nextjs – optimized for speed, SEO, and modern UX/UI trends. 🚀",
 };
 
 export default function RootLayout({
